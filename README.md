@@ -27,7 +27,9 @@ void ChampionCard::receiveDamage(int damage) {
 ```
 Champion Card.cpp
 <br>
-This code defines a ChampionCard class with methods to print the card's information, attack another card, and receive damage. The attack() and receiveDamage() functions handle the combat mechanics between ChampionCard objects.
+This code defines a ChampionCard class with methods to print the card's information, attack another card, and receive damage. 
+<br>
+The attack() and receiveDamage() functions handle the combat mechanics between ChampionCard objects.
 <br>
 ```cpp
 class SkillCard : public Card {
@@ -45,7 +47,9 @@ private:
 ```
 Skillcard.h
 <br>
-The SkillCard class is a derived class of the Card class, and it adds an effect member variable to store the effect of the skill card. The printCardInfo() function is overridden to provide a custom implementation for printing the information of a SkillCard object.
+The SkillCard class is a derived class of the Card class, and it adds an effect member variable to store the effect of the skill card. 
+<br>
+The printCardInfo() function is overridden to provide a custom implementation for printing the information of a SkillCard object.
 <br>
 ```cpp
 class Card {
@@ -67,4 +71,6 @@ protected:
 ```
 Card.h
 <br>
-The Card class is an abstract base class that defines the common properties and behaviors of a card. Derived classes (such as ChampionCard and SkillCard) will need to provide their own implementations for the pure virtual functions printCardInfo() and attack().
+The Card class is an abstract base class that defines the common properties and behaviors of a card. 
+<br>
+Derived classes (such as ChampionCard and SkillCard) will need to provide their own implementations for the pure virtual functions printCardInfo() and attack().
